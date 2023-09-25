@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/memorygameackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="289dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="Choose your level and enjoy the game"
+        android:textAlignment="center"
+        android:textColor="#095B80"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btEasy"
+        android:layout_width="127dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Easy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
+
+    <Button
+        android:id="@+id/btMedium"
+        android:layout_width="127dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEasy" />
+
+    <Button
+        android:id="@+id/btHard"
+        android:layout_width="127dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Hard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMedium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

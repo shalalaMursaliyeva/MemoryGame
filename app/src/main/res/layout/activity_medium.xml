@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".MediumActivity">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="196dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="Memorise"
+        android:textColor="@color/lili"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="96dp"
+            android:layout_height="131dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:srcCompat="@drawable/card" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="96dp"
+            android:layout_height="131dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/card" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="96dp"
+            android:layout_height="131dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/card" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="96dp"
+            android:layout_height="131dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/card" />
+
+
+    </GridLayout>
+
+
+    <ImageView
+        android:id="@+id/imageQuestionMedium"
+        android:layout_width="51dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvQuestion"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/card" />
+
+    <TextView
+        android:id="@+id/tvTimerMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAnswerMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <Button
+        android:id="@+id/btNextMedium"
+        android:layout_width="127dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswerMedium" />
+</androidx.constraintlayout.widget.ConstraintLayout>
